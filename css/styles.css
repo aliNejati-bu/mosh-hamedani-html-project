@@ -337,7 +337,16 @@ a {
     background-color: #02cdf1;
 }
 
+.card--primary .badge--primary {
+    background: #126de4;
+}
+
 /* plans */
+
+
+.plan{
+    transition: transform 0.2s ease-out;
+}
 
 .plan__name {
     color: #fff;
@@ -408,6 +417,17 @@ a {
     position: relative;
 }
 
+
+
+.plan:hover {
+    transform: scale(1.05);
+}
+.plan--popular {
+    transform: scale(1.1);
+}
+.plan--popular:hover {
+    transform: scale(1.15);
+}
 /* Media */
 
 .media {
@@ -766,7 +786,22 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-    .block-domain__prices{
-        grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+    .block-domain__prices {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
 }
+
+
+/* bLock pans */
+
+
+.block-plans .grid {
+    gap: 8rem 4rem;
+}
+
+
+.block-plans .card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
