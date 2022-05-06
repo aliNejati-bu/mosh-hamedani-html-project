@@ -344,7 +344,7 @@ a {
 /* plans */
 
 
-.plan{
+.plan {
     transition: transform 0.2s ease-out;
 }
 
@@ -418,16 +418,19 @@ a {
 }
 
 
-
 .plan:hover {
     transform: scale(1.05);
 }
+
 .plan--popular {
     transform: scale(1.1);
 }
+
 .plan--popular:hover {
     transform: scale(1.15);
 }
+
+
 /* Media */
 
 .media {
@@ -805,3 +808,30 @@ a {
     margin: 0 auto;
 }
 
+
+/* Features */
+
+.feature {
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+
+.feature__heading {
+    margin: 1rem 0;
+}
+
+
+.feature__image {
+    width: 100%;
+}
+
+
+.feature:first-of-type {
+    margin-top: 6rem;
+}
+
+@media screen and  (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
+    }
+}
